@@ -1,4 +1,4 @@
-d)local sdTarget = macro(1000, "SD Target", function() -- sd target macro
+local sdTarget = macro(1000, "SD Target", function() -- sd target macro
   local target = g_game.getAttackingCreature()
   if target then
     useWith(3155, target)
