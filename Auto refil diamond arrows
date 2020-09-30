@@ -1,0 +1,11 @@
+
+local arrowId = 25757
+local minQuantityOfArrows = 100
+local createArrowsSpell = "exevo gran con hur"
+
+macro(2000, "Create Arrows", function()
+     if player:getItemsCount(arrowId) < minQuantityOfArrows then
+       say(createArrowsSpell)
+   return
+   end
+end)
