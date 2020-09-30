@@ -1,0 +1,33 @@
+d)local sdTarget = macro(1000, "SD Target", function() -- sd target macro
+  local target = g_game.getAttackingCreature()
+  if target then
+    useWith(3155, target)
+  end
+end)
+
+local avaTarget = macro(800, "AVA Target", function() -- sd target macro
+  local target = g_game.getAttackingCreature()
+  if target then
+    useWith(3161, target)
+  end
+end)
+
+local gfbTarget = macro(800, "GFB Target", function() -- sd target macro
+  local target = g_game.getAttackingCreature()
+  if target then
+    useWith(3191, target)
+  end
+end)
+
+-- Item icon
+addIcon("sdTarget", {item=3155}--[[ icon options ]], function(icon, isOn)
+  sdTarget.setOn(isOn)
+end)
+
+addIcon("avaTarget", {item=3161}--[[ icon options ]], function(icon, isOn)
+  avaTarget.setOn(isOn)
+end)
+
+addIcon("gfbTarget", {item=3191}--[[ icon options ]], function(icon, isOn)
+  gfbTarget.setOn(isOn)
+end)
