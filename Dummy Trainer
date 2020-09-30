@@ -1,0 +1,9 @@
+local wandID = 28556 -- id da varinha
+local itemID = 28559 -- id do dummy usado
+macro(30*1000, "Dummy Training", function()
+  for _,tile in ipairs(g_map.getTiles(posz())) do
+    if tile:getTopUseThing():getId() == itemID then
+      useWith(wandID, tile:getTopUseThing())
+    end
+  end
+end)
