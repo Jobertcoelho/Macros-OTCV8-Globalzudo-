@@ -1,0 +1,13 @@
+
+macro(5*60*1000, "Criar potinho de stamina", function()
+  if soul() == 200 then
+    say("exevo stam")
+    turn(0)
+  end
+end)
+
+macro(1000, "Usar potim com 40h", function()
+if stamina() == 2400 then
+useWith(31368, player)
+end
+end)
