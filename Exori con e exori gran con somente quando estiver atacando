@@ -1,0 +1,5 @@
+macro(1, "Auto exori", function() 
+ if g_game.isAttacking() then
+	say("exori gran con") delay(2000)  say("exori con") delay(1700)
+ end
+end)
