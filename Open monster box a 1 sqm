@@ -1,0 +1,10 @@
+macro(2500, "open monster boxes",  function()
+  for i, tile in ipairs(g_map.getTiles(posz())) do
+    for u,item in ipairs(tile:getItems()) do
+      if (item and item:getId() == 8745 and getDistanceBetween(player:getPosition(), item:getPosition())  == 1) then
+        g_game.use(item)
+        return
+      end
+    end
+  end
+end)
