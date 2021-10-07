@@ -1,0 +1,6 @@
+macro(100, "Full Energy", function()
+  if getFinger() == null or getFinger():getId() ~= 3088 then
+    g_game.equipItemId(3051)
+     delay(50)
+  end
+end)
