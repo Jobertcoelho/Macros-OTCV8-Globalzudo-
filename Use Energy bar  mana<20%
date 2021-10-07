@@ -1,0 +1,5 @@
+macro(100,"energy bar", function()
+  if manapercent() < 20 then
+    use(23535)
+  end
+end)
