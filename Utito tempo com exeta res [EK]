@@ -1,0 +1,11 @@
+macro(2050, "Auto res", function()
+if g_game.isAttacking() then
+  if not hasPartyBuff() then
+     say("Frenzy")
+    delay(600)
+    say("utito tempo")
+  else
+    say("exeta res")
+  end
+end
+end)
