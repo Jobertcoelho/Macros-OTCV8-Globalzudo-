@@ -1,0 +1,11 @@
+local energy = 3051
+if getFinger() then equip_ammy = getFinger():getId() end
+macro(200, "Energy RING", function() 
+    if hppercent() <= 55 and (getFinger() == null or getFinger():getId() ~= energy) then
+            g_game.equipItemId(energy)
+            delay(200)
+    elseif hppercent() >= 90 and (getFinger() == null or getFinger():getId() ~= 34080) then
+        g_game.equipItemId(34080)
+        delay(200)
+    end
+end)
